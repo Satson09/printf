@@ -9,13 +9,16 @@
 int main(void)
 {
 	int len;
+	int len2;
 
 	len = _printf("Beautiful day.\n");
-	printf("%d\n", len);
-	len = _printf("H");
-	printf("%c\n", len);
-	len =  _printf("I am a string !\n");
-	len = _printf("%\n");
-	printf("%%\n");
+	len2 = printf("Good Morning.\n");
+	_printf("character:[%c]\n", len);
+	printf("Character:[%c]\n", len2);
+	_printf("String:[%s]\n", "len!");
+	printf("String:[%s]\n", "len2!");
+	len = _printf("Percent:[%%]\n");
+	len2 = printf("Percent:[%%]\n");
 	return (0);
 }
+
